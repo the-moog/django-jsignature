@@ -1,10 +1,13 @@
-<div class='jsign-wrapper'>
+<div class='jsign-wrapper'   style="
+    box-shadow: inset 2px 5px 20px #555;
+    border-radius: 5px;
+  ">
   {{ hidden }}
   <div id='{{ jsign_id }}'
        data-config='{{ js_config }}'
        data-initial-value='{{ value }}'
        class='jsign-container'></div>
   {% if config.ResetButton %}
-    <input type='button' value='{{ reset_btn_text }}' class="btn">
+    <input type='button' value='{{ reset_btn_text }}' id="jsignature-button" style="display:none"></input>
   {% endif %}
 </div>
