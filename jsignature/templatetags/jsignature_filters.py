@@ -4,7 +4,7 @@ import io
 from django import template
 from django.utils.encoding import iri_to_uri
 
-from jsignature.utils import draw_signature
+from ..utils import draw_signature
 
 register = template.Library()
 
